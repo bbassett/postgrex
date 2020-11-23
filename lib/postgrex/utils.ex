@@ -30,8 +30,8 @@ defmodule Postgrex.Utils do
   Converts pg major.minor.patch (http://www.postgresql.org/support/versioning) version to an integer
   """
   def parse_version(version) do
-    version
-    |> IO.inspect(label: "POSTGRES VERSION:")
+    "POSTGRES VERSION: #{version}"
+    |> IO.puts()
 
     # list =
     #   version
